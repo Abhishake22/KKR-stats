@@ -1,0 +1,15 @@
+#Highest Batting Average
+
+SELECT batting.Player,BatAve,Mat
+FROM batting
+WHERE BatAve>30
+order by BatAve DESC;
+
+
+Top 10 strike Rate for KKR
+
+SELECT batting.Player,SR,BatInns
+FROM batting
+WHERE BatInns>15
+group by player
+HAVING SR>130 order by SR DESC;
